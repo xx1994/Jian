@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xx.jian.view.Activity.LastTimeAddActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/add_last_time_toobar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/toobar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base15dp"
+                android:text="添加记忆"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/base20dp" />
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/sureBtn"
+            android:layout_width="@dimen/base60dp"
+            android:layout_height="@dimen/base30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/base15dp"
+            android:background="#2BC40A"
+            android:gravity="center"
+            android:text="添加"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/base15dp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/add_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base70dp"
+        android:layout_below="@+id/toolbar_layout"
+        android:layout_margin="@dimen/base20dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="定格这一刻..."
+        android:textSize="@dimen/base17dp" />
+
+    <ImageView
+        android:id="@+id/last_time_addimg"
+        android:layout_width="@dimen/base70dp"
+        android:layout_height="@dimen/base70dp"
+        android:layout_below="@+id/add_text"
+        android:layout_marginLeft="@dimen/base15dp"
+        android:src="@drawable/gridview_addpic" />
+
+    <GridView
+        android:layout_marginRight="@dimen/base15dp"
+        android:layout_marginLeft="@dimen/base15dp"
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_text"
+        android:columnWidth="@dimen/base70dp"
+        android:horizontalSpacing="@dimen/base10dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/base10dp"
+        android:visibility="gone"></GridView>
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/base5dp"
+    android:layout_marginRight="@dimen/base5dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardCornerRadius="@dimen/base7dp"
+    card_view:cardElevation="@dimen/base4dp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/news_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base100dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/base10dp"
+        android:paddingRight="@dimen/base10dp">
+
+        <ImageView
+            android:id="@+id/news_img"
+            android:layout_width="@dimen/base80dp"
+            android:layout_height="@dimen/base80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/news_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/news_img"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingLeft="10dp"
+            android:text="如何看待当下这种越来越普遍的“沉默”人格？"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="@dimen/base17dp" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/content_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base40dp"
+        android:layout_marginTop="@dimen/base10dp"
+        android:drawableRight="@drawable/right_arrow"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/base20dp"
+        android:paddingRight="@dimen/base20dp"
+        android:text="上次"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/base18dp" />
+
+</RelativeLayout>

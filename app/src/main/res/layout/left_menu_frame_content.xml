@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/left_menu_bg">
+
+    <ImageView
+        android:id="@+id/left_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/base30dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/last_time_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base40dp"
+        android:layout_below="@+id/left_logo"
+        android:layout_marginTop="@dimen/base20dp"
+        android:background="#84000000"
+        android:drawableRight="@drawable/right_arrow"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/base20dp"
+        android:paddingRight="@dimen/base20dp"
+        android:text="上次"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/base20dp" />
+
+    <TextView
+        android:id="@+id/clean_cache"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#84000000"
+        android:drawableRight="@drawable/right_arrow"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/base20dp"
+        android:paddingRight="@dimen/base20dp"
+        android:text="清理缓存"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/base20dp" />
+
+    <ListView
+        android:id="@+id/menu_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/clean_cache"
+        android:layout_below="@+id/last_time_view"
+        android:layout_marginBottom="@dimen/base20dp"
+        android:layout_marginTop="@dimen/base20dp"
+        android:background="#84000000"
+        android:divider="@null"
+        android:scrollbars="none"></ListView>
+
+
+</RelativeLayout>

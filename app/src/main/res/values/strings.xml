@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">简·忆</string>
+
+    <string name="shared_img" translatable="false">shared_img</string>
+</resources>

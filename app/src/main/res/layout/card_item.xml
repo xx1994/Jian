@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/base5dp"
+    android:paddingRight="@dimen/base5dp">
+
+    <com.xx.jian.view.card.AutoScaleRelativeLayout
+        android:id="@+id/card_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top"
+        card:widthHeightRate="0.9">
+
+        <ImageView
+            android:id="@+id/card_image_view"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <View
+            android:id="@+id/maskView"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true" />
+    </com.xx.jian.view.card.AutoScaleRelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/card_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom"
+        android:paddingBottom="@dimen/base30dp"
+        android:paddingTop="@dimen/base15dp">
+
+        <TextView
+            android:id="@+id/card_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base10dp"
+            android:text="叶琪琪 23"
+            android:textColor="#111"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</LinearLayout>

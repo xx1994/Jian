@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  <color name="colorPrimary">#D7D8D4</color>
+      <color name="colorPrimaryDark">#D7D8D4</color>-->
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="swiprefresh">#000000</color>
+
+
+    <!--Banner图下面的背景色-->
+    <color name="halfer_transparent">#66000000</color>
+
+
+</resources>
